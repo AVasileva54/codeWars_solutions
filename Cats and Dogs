@@ -1,0 +1,23 @@
+var ownedCatAndDog = function (catYears, dogYears) {
+let ownedCat = 0;
+let ownedDog  = 0;
+    if (catYears < 15 && catYears >= 0){
+        ownedCat = 0;
+     }
+    if (catYears >= 15 && catYears < 24){
+        ownedCat = 1;
+      }
+    if (catYears >= 24){
+        ownedCat = Math.trunc((catYears-24)/4+2);
+      } 
+    if (dogYears < 15 && dogYears >= 0){
+        ownedDog = 0;
+      }
+    if (dogYears >= 15 && dogYears < 24){
+        ownedDog = 1;
+      }
+    if (dogYears >= 24){
+        ownedDog = Math.trunc((dogYears-24)/5+2);
+      }
+  return [ownedCat,ownedDog]  
+}
