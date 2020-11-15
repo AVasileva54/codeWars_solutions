@@ -1,0 +1,7 @@
+function isLucky(n) {
+let sum = 0;
+    for (let num of [n]){
+    sum = sum + num};
+    if (sum % 9 === 0) return true
+    else return false
+}
