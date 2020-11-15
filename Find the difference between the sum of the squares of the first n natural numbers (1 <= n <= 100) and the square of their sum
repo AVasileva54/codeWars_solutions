@@ -1,0 +1,9 @@
+function differenceOfSquares(n){
+let a = 0,
+    b = 0,
+    i = 1;
+       while (i <= n){
+         a = (a + i), b = b + (i**2); i++;
+       }
+ return a**2 - b;
+}
