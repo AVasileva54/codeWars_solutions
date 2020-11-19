@@ -3,3 +3,8 @@
 const isReallyNaN = (val) => {
   return (Number.isNaN(val));
 }
+
+
+const isReallyNaN = (val) => {
+ return !(val === val);
+};
