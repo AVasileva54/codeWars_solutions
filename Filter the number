@@ -2,3 +2,11 @@
 var FilterString = function(value) {
  return +value.replace(/\D+/g,"")
 }
+
+var FilterString = function(value) {
+  let str = '';
+  for (let i = 0; i < value.length; i++) {
+    if (isNaN(value[i]) === false) str += value[i];
+  }
+  return +str;
+}
