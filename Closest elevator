@@ -11,3 +11,12 @@ function elevator(left, right, call){
 function elevator(left, right, call){
   return (Math.abs(call-left) < Math.abs(call-right))? 'left': 'right';
 }
+
+
+
+function elevator(l, r, c){
+ let a = Math.abs(l - c),
+     b = Math.abs(r - c);
+  if (a >= b ) return 'right'
+  return 'left';
+}
