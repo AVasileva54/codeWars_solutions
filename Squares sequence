@@ -7,3 +7,13 @@ for (let i = x, j = 1; j <= n; j ++, i *= i){
   }
 return arr;
 }
+
+
+function squares(x, n) {
+let arr= []
+for (let i = 1; i <= n; i ++){
+  arr.push(x);
+  x = x * x;
+  }
+  return arr;
+}
