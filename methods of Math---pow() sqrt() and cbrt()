@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/5733f948d780e27df6000e33/train/javascript
+
+function cutCube(volume,n){
+ let m = volume/n;
+ let x = Math.round(Math.cbrt(m));
+  return (Math.cbrt(n) % 1 == 0)? x ** 3 == m: false;
+}
