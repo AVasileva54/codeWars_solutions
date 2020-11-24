@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/5865cff66b5699883f0001aa/train/javascript
+
+function toTime(s) {
+let x = Math.floor(s / 3600),
+    y = Math.floor((s - 3600 * x) / 60);
+return (x + ' hour(s) and ' + y + ' minute(s)')
+}
