@@ -1,0 +1,21 @@
+//https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/javascript
+
+function race(v1, v2, g) {
+var h = 0;
+var mn = 0;
+var s = 0;
+var s = g / (v2 - v1) * 60 * 60
+if (v1 >= v2) return null;
+  while (s >= 60){ 
+    if (s >= 60){
+      mn += 1;
+      s -= 60;
+    };
+  };
+  s = Math.floor(s);
+   while (mn >= 60){
+    h += 1;
+    mn -= 60;    
+  } 
+return [h, mn, s];
+}
