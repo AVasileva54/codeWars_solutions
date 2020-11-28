@@ -1,0 +1,11 @@
+//codewars.com/kata/56b29582461215098d00000f/train/javascript
+
+function pipeFix(n){
+let a = Math.min(...n),
+    b = Math.max(...n),
+    c = [];
+  for(let i = a; i <= b; i++) {
+    c.push(i);
+  }
+  return c;
+}
