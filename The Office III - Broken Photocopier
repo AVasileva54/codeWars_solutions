@@ -5,3 +5,11 @@ function broken(x){
     return a === '0' ? '1' : '0';
   })
 }
+
+function broken(x){
+let r = '';
+  for(let i = 0; i < x.length; i++){
+    r +=x[i] === '0'? '1': '0';
+  }
+  return r;
+}
