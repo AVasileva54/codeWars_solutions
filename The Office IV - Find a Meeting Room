@@ -1,0 +1,6 @@
+//https://www.codewars.com/kata/57f604a21bd4fe771b00009c/train/javascript
+
+function meeting(x){
+  var f = x.indexOf('O');
+  return f > -1 ? f : 'None available!';
+}
