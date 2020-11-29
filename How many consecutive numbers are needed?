@@ -1,0 +1,11 @@
+//https://www.codewars.com/kata/559cc2d2b802a5c94700000c/train/javascript
+
+function consecutive(arr) {
+let a = Math.min(...arr),
+    b = Math.max(...arr),
+    c = [];
+  for(let i = a; i <= b; i++) {
+    c.push(i);
+  }
+  return (Math.abs(arr.length - c.length));
+}
