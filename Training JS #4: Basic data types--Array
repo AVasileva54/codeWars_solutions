@@ -1,0 +1,20 @@
+//https://www.codewars.com/kata/571effabb625ed9b0600107a/train/javascript
+
+function getLength(arr){
+  return (arr.length)  //return length of arr
+}
+function getFirst(arr){
+  return arr[0]  //return the first element of arr
+}
+function getLast(arr){
+  return arr[arr.length-1]   //return the last element of arr
+}
+function pushElement(arr){
+  var el = 4;
+  let a = arr.push(el)
+  return arr      //push el to arr
+}
+function popElement(arr){
+  let b = arr.pop() //pop an element from arr
+   return arr////pop an element from arr
+}
