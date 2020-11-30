@@ -1,0 +1,3 @@
+function typeOfArg(value){
+return {}.toString.call(value)
+}
