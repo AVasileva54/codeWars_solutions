@@ -1,7 +1,7 @@
 //https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/javascript
 
 function switchItUp(number){
-const D = ['Zero','One','Two','Three','For','Five','Six','Seven','Eigth','Nine'];
+const D = ['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine'];
   return D[number];
 }
 
