@@ -1,0 +1,3 @@
+function isArgArray(value){
+return Array.isArray(value)? true : false
+}
