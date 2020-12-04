@@ -18,3 +18,8 @@ let arr = [];
  }
   return arr;
 }
+
+
+var arrayLeaders = numbers => {
+return  numbers.filter((el, i) => el > numbers.slice(i + 1).reduce((s, el) => s + el, 0))
+}
