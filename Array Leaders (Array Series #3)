@@ -9,3 +9,12 @@ var arrayLeaders = numbers => {
   }
   return arr;
 }
+
+
+var arrayLeaders = numbers => {
+let arr = [];
+ for(let i = 0; i < numbers.length; i++){
+  if(numbers[i] > numbers.slice(i + 1).reduce((s, el) => s + el, 0)) arr.push(numbers[i]);
+ }
+  return arr;
+}
