@@ -1,0 +1,24 @@
+//https://www.codewars.com/kata/577a98a6ae28071780000989/solutions/javascript
+
+const min = list => {
+  return Math.min(...list);
+}
+const max = list =>{
+  return Math.max(...list);
+}
+_________________________________________________
+const min = list => {
+  let m = list[0];
+  for(let i = 1; i <= list.length; i++){
+    if(list[i] < m) m = list[i]
+  }
+  return m;
+}
+
+const max = list => {
+   let m = list[0];
+  for(let i = 1; i <= list.length; i++){
+    if(list[i] > m) m = list[i]
+  }
+  return m;
+}
