@@ -1,0 +1,9 @@
+//https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/javascript
+
+function find_average(a) {
+let count = 0;
+  for(let i = 0; i < a.length; i++){
+    count += a[i]
+  }
+  return count/a.length;
+}
