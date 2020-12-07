@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/javascript
+
+function inviteMoreWomen(L) {
+let sum = L.reduce((a,b)=> a+b,0);
+  console.log(sum)
+return sum > 0 ? true : false;
+}
