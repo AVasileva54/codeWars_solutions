@@ -1,0 +1,18 @@
+//https://www.codewars.com/kata/580dda86c40fa6c45f00028a/train/javascript
+
+function cubeOdd(arr) {
+let total = 0;
+  for(let i = 0; i < arr.length; i++){
+    if(isNaN(arr[i])){
+      total = undefined;
+    return total;
+  }
+}
+arr.map(function(x) {
+  if(x % 2 !== 0) {
+    x = Math.pow(x, 3);
+    return total = total + x
+  }
+});
+  return total;
+}
