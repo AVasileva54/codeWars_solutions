@@ -1,0 +1,13 @@
+//https://www.codewars.com/kata/5648b12ce68d9daa6b000099/train/javascript
+
+var number = function(busStops){
+  let totalPl = 0;
+for(let i = 0; i < busStops.length; i++){
+  let curStops = busStops[i];
+  let getOn = curStops[0];
+  let getOff = curStops[1]
+  totalPl += getOn;
+  totalPl -= getOff;
+}
+  return totalPl;
+}
