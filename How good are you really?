@@ -1,0 +1,11 @@
+//https://www.codewars.com/kata/5601409514fc93442500010b/train/javascript
+
+function betterThanAverage(classPoints, yourPoints) {
+let count = 0;
+ classPoints.map(item => {
+ if (item < yourPoints) {
+ count ++;
+ }
+ });
+ return count > classPoints.length - count;
+}
