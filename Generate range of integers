@@ -1,0 +1,9 @@
+//https://www.codewars.com/kata/55eca815d0d20962e1000106/train/javascript
+
+function generateRange(min, max, step){
+   let newArray = [];
+   for(let i = min; i <= max; i += step){
+     newArray.push(i);
+   }
+   return newArray;
+ }
