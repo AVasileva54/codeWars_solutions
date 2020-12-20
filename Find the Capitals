@@ -1,0 +1,11 @@
+//https://www.codewars.com/kata/53573877d5493b4d6e00050c/train/javascript
+
+function capital(capitals){
+  const arr = [];
+let str = '';
+  for(let el of capitals ){
+    str = `The capital of ${el['state'] || el['country']} is ${el.capital}`;
+    arr.push(str)
+  }
+return arr;
+}
