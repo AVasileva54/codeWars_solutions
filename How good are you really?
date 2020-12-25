@@ -9,3 +9,9 @@ let count = 0;
  });
  return count > classPoints.length - count;
 }
+
+
+function betterThanAverage(c, y) {
+ return c.reduce((acc, item) => acc + item, 0) / c.length < y; 
+}
+
