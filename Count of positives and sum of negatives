@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/javascript
+
+function countPositivesSumNegatives(input) {
+  if(!input || !input.length) return [];
+    let f = 0; s = 0;
+  input.forEach(el => {
+    if(el > 0) {
+      f++;
+    } else {
+       s += el;         
+    }
+  });
+  return [f , s]
+}
