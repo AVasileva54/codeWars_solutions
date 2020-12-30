@@ -1,0 +1,19 @@
+//https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/javascript
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let currentMin = args[0];
+    for(let i = 0; i <= args.length; i++){
+      if(args[i] < currentMin)
+        currentMin = args[i]
+    }
+    return currentMin;
+  }
+}
