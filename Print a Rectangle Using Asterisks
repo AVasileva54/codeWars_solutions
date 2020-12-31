@@ -1,0 +1,9 @@
+//https://www.codewars.com/kata/5937ae46377144bb2f000029/train/javascript
+
+
+function getRectangleString(w, h) {
+  const rn = '\r\n';
+  const tb = '*'.repeat(w) + rn;
+  const centre =(w > 1)? ('*' + ' '.repeat(w - 2) + '*' + rn).repeat(h-2) : '';
+  return h > 1 ? (tb + centre + tb) : tb.repeat(h);
+}
