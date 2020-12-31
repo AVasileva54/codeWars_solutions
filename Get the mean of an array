@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/563e320cee5dddcf77000158/train/javascript
+
+function getAverage(marks){
+  return Math.floor(marks.reduce((acc, cur) => acc + cur) / marks.length);
+}
+
+
+function getAverage(marks){
+let acc = 0;
+  marks.forEach(el => acc += el);
+  return Math.floor(acc/marks.length);
+}
