@@ -1,0 +1,19 @@
+//https://www.codewars.com/kata/5f5daf1a209a64001183af9b/train/javascript
+
+
+function makeChocolates(small, big, goal) {
+let BW = 5
+let SW = 2
+let result=-1
+for (let i=big; i>=0; i--)
+  {
+    let bigsWeigth=i*BW;
+    let reminderWeigth = goal - bigsWeigth;
+    if( bigsWeigth<=goal && reminderWeigth % SW ===0 && reminderWeigth/SW<=small)
+      {
+        result= reminderWeigth/SW;
+        break;
+      }
+  }
+return result;
+}
