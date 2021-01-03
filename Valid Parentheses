@@ -1,0 +1,31 @@
+//https://www.codewars.com/kata/52774a314c2333f0a7000688/train/javascript
+
+
+function validParentheses(p){
+  const open = ['('], close = [')'], stack = [];
+  
+  for(let i = 0; i < p.length; i++){
+    if(open.includes(p[i])){
+      stack.push(p[i])
+      } else {
+        if(close.indexOf(p[i]) === open.indexOf(stack[stack.length -1])){
+          stack.pop();
+        } else {
+          return false; 
+        }
+      }
+    }
+   return stack.length === 0;
+  }
+  
+  
+  function validParentheses(parens){
+  var n = 0;
+  for (var i = 0; i < parens.length; i++) {
+    if (parens[i] == '(') n++;
+    if (parens[i] == ')') n--;
+    if (n < 0) return false;
+  }
+  
+  return n == 0;
+}
