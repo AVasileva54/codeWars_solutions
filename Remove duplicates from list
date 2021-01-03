@@ -13,3 +13,8 @@ function distinct(a) {
   }
   return res;
 }
+
+
+function distinct(a) {
+  return [...new Set(a)];
+}
