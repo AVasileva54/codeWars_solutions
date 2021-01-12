@@ -1,0 +1,11 @@
+//https://www.codewars.com/kata/598057c8d95a04f33f00004e/train/javascript
+
+
+function range(s, e){
+  let a = [];
+    for(let i = s + 1; i < e; i++)
+    a.push(i)
+return a;
+};  
+  
+
