@@ -1,0 +1,19 @@
+//https://www.codewars.com/kata/59ca8e8e1a68b7de740001f4/train/javascript
+
+const solve = (a,b) => b.map(x => a.filter(n => n === x).length);
+
+
+function solve(a,b){
+  let arr = [];
+  let res = 0;
+  for (let i = 0; i < b.length; i++){
+    for (let j = 0; j < a.length; j++){
+      if (b[i] === a[j]){
+        res++;
+      }
+    }
+    arr.push(res);
+    res = 0;
+  }
+  return arr;
+}
