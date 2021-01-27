@@ -1,0 +1,8 @@
+//https://www.codewars.com/kata/5a0b4dc2ffe75f72f70000ef/solutions/javascript/me/best_practice
+
+
+function findChildren(santasList, children) {
+let arr = santasList.filter(el => children.includes(el))
+let arr2 = arr.filter((el, i) => i === arr.indexOf(el))
+return arr2.sort()
+}
