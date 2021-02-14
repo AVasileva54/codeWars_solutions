@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/javascript
+
+function warnTheSheep(queue) {
+let a = (queue.length - 1 - (queue.indexOf('wolf')))
+if(a === 0)  return 'Pls go away and stop eating my sheep'
+else return `Oi! Sheep number ${a}! You are about to be eaten by a wolf!`
+}
