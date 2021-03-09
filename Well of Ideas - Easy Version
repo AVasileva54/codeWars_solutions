@@ -1,0 +1,8 @@
+//https://www.codewars.com/kata/57f222ce69e09c3630000212/train/javascript
+
+function well(x){
+let count = x.filter(el => el === 'good');
+   if(count.length < 1 ) return  'Fail!';
+   if(count.length === 1 || count.length === 2) return 'Publish!';
+    else return 'I smell a series!';
+}
