@@ -1,0 +1,8 @@
+//https://www.codewars.com/kata/5a3f4eace1ce0eeda600003d/train/javascript
+
+function swapTwo(array, a, b) {
+ let arr = array.slice();
+  arr[array.indexOf(a)] = b;
+  arr[array.lastIndexOf(b)] = a;
+  return arr;
+}
