@@ -1,0 +1,17 @@
+//https://www.codewars.com/kata/5676f07029da352ba2000065/train/javascript
+
+const largest = (n) => {
+ if (n > 0 && typeof(n) === 'number') {
+    let num = Math.pow(10, n) - 1   
+       for (let i = num; i > 2; i--){ 
+          let j = 2;                  
+             while (j <= num){          
+                 if (i % j === 0) break 
+                 j++                    
+                 if (j === i) return i; 
+              }                                                                   
+         }                                
+   }                                    
+ else 
+   return false
+   }
