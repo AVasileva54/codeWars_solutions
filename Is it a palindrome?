@@ -1,0 +1,13 @@
+//https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/javascript
+
+function isPalindrome(x) {
+  let lowerCase = x.toLowerCase();
+  let len = lowerCase.length;
+  let mid = len/2;
+  for (let i = 0; i < mid; i++){
+    if (lowerCase[i] !== lowerCase[len - 1 - i]){
+      return false;
+    }
+  }
+  return true;
+}
